@@ -1,0 +1,6 @@
+.page {
+  width: 375px;
+  height: 812px;
+  bottom: -812px;
+  transform: translateY(812px);
+}

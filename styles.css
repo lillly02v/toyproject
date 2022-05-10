@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.page1,
+.page2,
+.page3 {
+  background-color: #EEECE5;
+  width: 375px;
+  height: 812px;
+  position: relative;
+}
+
+.account_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img.account_header__profile {
+  width:43px;
+  height: 43px;
+  border-radius: 50%;
+}
+
+.account_header__title {
+  font-size: 18px;
+}
+
+.account_header__icons img:first-child {
+  margin-right: 18px;
+}
+
+.account_middle {
+  width: 279px;
+  height: 155px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0px, 0px rgba(226, 191, 66, 0.19);
+  position: relative;
+}
+
+.account_middle__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.account_middle__number {
+  font-size: 14px;
+  color: #858585;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+.account_middle__price strong {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.account_middle__extra {
+  font-size: 14px;
+  color: #858585;
+}
+
+.account_middle__transfer {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+}
+
+.account_middle__chart {
+  position: absolute;
+  bottom: 33px;
+  right: 17px;
+}
+
+input[type="range"] {
+  background: transparent;
+  appearance: none;
+  background: rgb(247, 193, 77);
+  height: 0.5rem;
+   
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 2px;
+  background: orange;
+}
+
+.account-ad {
+  text-align: center;
+}
+
+.account_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 0 36px;
+  height: 500px;
+}
+
+.account_detail.barUp {
+  position: relative;
+  top: -217px;
+  height: 700px;
+}
+
+.account_detail__bar {
+  margin-top: 4px;
+  cursor: pointer;
+  background-color: #C4C4C4;
+  border: none;
+  width: 48px;
+}
+
+.account_detail__bar:hover {
+  background-color: #C4C4C4;
+}
+
+.account_detail__bank {
+  overflow-x: scroll;
+  width: 308px;
+  height: 49px;
+  top: 23px;
+  position: relative;
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.account_detail__banks {
+  width: 162px;
+  height: 47px;
+  border-radius: 6px;
+  background-color: #DADADA;
+  margin-right: 13px;  
+  flex-shrink: 0;
+}
+
+.account_detail__banks-left {
+  font-size: 12px;
+  background-color: #FF5F00;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 97px;
+  height: 47px;
+}
+
+.account_detail__banks-left p {
+  margin: 0;
+}
+
+.account_detail__plus {
+  display: flex;
+  align-items: center;
+}
+
+.account_detail__plus button {
+  background-color: #ff5f00;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.account_detail__plus p {
+  color: #ff5f00;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.account_detail__sum {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account_detail__list {
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav {
+  width: 375px;
+  height: 76px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(rgb(109, 92, 92), rgb(180, 168, 168));
+  padding: 24px 46px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.chartSection.chartUp {
+  position: absolute;
+  top: 110px;
+  z-index: 1;
+  height: 626px;
+  overflow-y: scroll;
+}
+
+.chartSection {
+  background-color: #fff;
+}
+
+.chartSection .chartSection_standard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.chartSection_range {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.closeBtn {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}

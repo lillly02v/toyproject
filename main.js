@@ -15,6 +15,7 @@ for(let i = 0; i<3;i++) {
   }
 }
 
+// range
 const range = document.querySelector('.standardBar');
 const result = document.querySelector('.standard');
 function handleInput(e){
@@ -31,14 +32,16 @@ init();
 
 
 
-
+//계좌내역
 const accountBar = document.querySelectorAll('.account_detail__bar');
+const accountDetailList = document.querySelectorAll('.account_detail__list');
 for(let i =0;i<3;i++) {
   accountBar[i].addEventListener('click', accountBarHandler);
   const accountDetail = document.querySelectorAll('.account_detail');
   function accountBarHandler() {
     console.log(accountDetail[1]);
     accountDetail[i].classList.toggle('barUp');
+    accountDetailList[i].classList.toggle('barUp');
   }
 }
 

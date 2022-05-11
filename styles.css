@@ -204,6 +204,11 @@ input[type=range]::-webkit-slider-thumb {
   overflow-y: scroll;
 }
 
+.account_detail__list.barUp {
+  height: 545px;
+}
+
+
 .list li {
   display: flex;
   justify-content: space-between;

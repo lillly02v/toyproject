@@ -36,6 +36,7 @@
           for (let j=0; j<=dateDays;j++){
             //하루 단위 for문 반복
             sum[j] =0;
+
             accountSum[j] = document.createElement('div');
             day[j] = document.createElement('span');
             expend[j] = document.createElement('span');
@@ -45,13 +46,15 @@
             ulElem[j].classList.add('list');
             day[j].classList.add('day');
             expend[j].classList.add('expend');
+
             accountList.item(k).appendChild(accountSum[j]); // 날짜+sum부분
             accountSum[j].appendChild(day[j]); //날짜부분
             accountSum[j].appendChild(expend[j]); //sum부분
             accountList.item(k).appendChild(ulElem[j]); // list부분
   
             for(let i = 0; i < obj.length; i++ ) { //객체의 모든 item 반복
-              if (obj[i].date == ('2022.05.0'+String(6-j))) { // 요일차이를 이용한 if문 조건
+              console.log((obj[obj.length-1].date).substr(8,2));
+              if (obj[i].date == ('2022.05.0'+String(parseInt((obj[obj.length-1].date).substr(8,2))-j))) { // 요일차이를 이용한 if문 조건
                 if(j === 0 ){
                   day[j].textContent = '오늘'; //날짜 출력
                 } else if (j===1) {
@@ -59,7 +62,7 @@
                 } else if (j===2) {
                   day[j].textContent = '그제';
                 } else {
-                  day[j].textContent = '2022.05.0'+String(6-j);
+                  day[j].textContent = '2022.05.0'+String(parseInt((obj[obj.length-1].date).substr(8,2))-j);
                 }
                 
                 const li = document.createElement('li');

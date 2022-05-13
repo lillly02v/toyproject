@@ -53,9 +53,8 @@
             accountList.item(k).appendChild(ulElem[j]); // list부분
   
             for(let i = 0; i < obj.length; i++ ) { //객체의 모든 item 반복
-              console.log((obj[obj.length-1].date).substr(0,8)+String(parseInt((obj[obj.length-1].date).substr(8,2))-j));
-              //수정중
-              if (obj[i].date == (String(parseInt((obj[obj.length-1].date).substr(8,2))).length == 2 ? (obj[obj.length-1].date).substr(0,8)+String(parseInt((obj[obj.length-1].date).substr(8,2))-j): (obj[obj.length-1].date).substr(0,8)+"0"+String(parseInt((obj[obj.length-1].date).substr(8,2))-j))) { // 요일차이를 이용한 if문 조건
+              const today = (obj[obj.length-1].date).substr(0,8)+String(parseInt((obj[obj.length-1].date).substr(8,2))-j).padStart(2,"0");
+              if (obj[i].date == today) { // 요일차이를 이용한 if문 조건
                 if(j === 0 ){
                   day[j].textContent = '오늘'; //날짜 출력
                 } else if (j===1) {
@@ -63,7 +62,7 @@
                 } else if (j===2) {
                   day[j].textContent = '그제';
                 } else {
-                  day[j].textContent = (String(parseInt((obj[obj.length-1].date).substr(8,2))).length == 2 ? (obj[obj.length-1].date).substr(0,8)+String(parseInt((obj[obj.length-1].date).substr(8,2))-j): (obj[obj.length-1].date).substr(0,8)+"0"+String(parseInt((obj[obj.length-1].date).substr(8,2))-j));
+                  day[j].textContent = today;
                 }
                 
                 const li = document.createElement('li');

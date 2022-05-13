@@ -21,6 +21,12 @@ li {
   position: relative;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .account_header {
   display: flex;
   justify-content: space-around;

@@ -12,8 +12,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="swiper.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
@@ -23,7 +23,12 @@
         <div class="swiper-slide">
           <div class="page1">
             <header>
-              <img src="image/아이폰 상태바.png" alt="아이폰 상태바">
+              <h5 id="clock"></h5>
+              <div>
+                <img src="image/Cellular Connection.png" alt="cellular connection">
+                <img src="image/Wifi.png" alt="wifi">
+                <img src="image/Battery.png" alt="battery">
+              </div>
             </header>
 
             <div class="account_header">
@@ -252,9 +257,10 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script src="./main.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script src="./chart.js"></script>
-    <script defer src="./account.js"></script>
+    <script src="js/chart.js"></script>
+    <script defer src="js/account.js"></script>
+    <script src="js/clock.js"></script>
   </body>
 </html>

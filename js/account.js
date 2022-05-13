@@ -69,8 +69,13 @@
                 const strong = document.createElement('strong');
                 strong.textContent = obj[i].item; //리스트 목록 출력
                 const span = document.createElement('span');
+                if(obj[i].inOut == "in") {
+                  span.classList.add("plus");
+                  span.textContent = "+"+obj[i].price;
+                } else {
+                  span.textContent = obj[i].price; //리스트 가격 출력
+                }
                 
-                span.textContent = obj[i].price; //리스트 가격 출력
     
                 li.appendChild(strong);
                 li.appendChild(span);

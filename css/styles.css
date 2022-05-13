@@ -220,6 +220,15 @@ input[type=range]::-webkit-slider-thumb {
   height: 545px;
 }
 
+.account_detail__list .list li {
+  height: 34px;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.account_detail__list .list li span.plus {
+  color: orangered;
+}
+
 
 .list li {
   display: flex;
